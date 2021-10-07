@@ -28,7 +28,7 @@
 .inputwidth100{
     border-radius: 30px;
     width: 100%;
-    height: 32px;
+    height: 40px;
 }
 .loginwithcontainer{
     display: flex;
@@ -38,13 +38,23 @@
 
 }
 .roundbutton{
-    background-color: violet;
+    background-color: var(--violet);
     border-radius: 30px;
     width: 300px;
     height: 60px;
     font-size: 32px;
+    border: 0;
+    color: white;
+    cursor: pointer;
 }
 
 .font12{
     font-size: 12px;
+}
+
+.flexcolumncenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

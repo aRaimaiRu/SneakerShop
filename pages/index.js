@@ -9,11 +9,11 @@ export default function Home() {
     <Layout>
       <div className={loginstyle.legoimage}>LEGO</div>
       <div className={loginstyle.inputcontainer}>
-        <p>อีเมลล์</p>
+        <label>อีเมลล์</label>
         <input type="text" className={loginstyle.inputwidth100} />
-        <p>รหัสผ่าน</p>
+        <label>รหัสผ่าน</label>
         <input type="password" className={loginstyle.inputwidth100} />
-        <div className={loginstyle.loginwithcontainer}>
+        <div className={loginstyle.loginwithcontainer} style={{margin:"10px 0"}}>
           <Image
             src="/images/facebookicon.png"
             alt="facebookicon"
@@ -28,13 +28,12 @@ export default function Home() {
           />
         </div>
         <div
-          className={loginstyle.inputcontainer}
-          style={{ alignItems: "center" }}
+          className={loginstyle.flexcolumncenter}
         >
-          <button className={loginstyle.roundbutton}>เข้าสู่ระบบ</button>
-          <button className={loginstyle.roundbutton}>สมัครสมาชิก</button>
+          <Link href="/" ><button className={loginstyle.roundbutton} style={{margin:"10px 0"}}>เข้าสู่ระบบ</button></Link>
+          <Link href="/register"><button className={loginstyle.roundbutton} style={{margin:"5px 0"}}>สมัครสมาชิก</button></Link>
           <Link href="/forgotpassword">
-            <span className={loginstyle.font12}>ลืมรหัสผ่าน</span>
+            <a className={loginstyle.font12} >ลืมรหัสผ่าน</a>
           </Link>
         </div>
       </div>
