@@ -14,6 +14,7 @@ a {
 * {
   box-sizing: border-box;
   --violet: #9610C6;
+  --pink: #ff7b7b;
 }
 
 p {
