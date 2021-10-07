@@ -30,7 +30,7 @@ export default function Home() {
         <div
           className={loginstyle.flexcolumncenter}
         >
-          <Link href="/" ><button className={loginstyle.roundbutton} style={{margin:"10px 0"}}>เข้าสู่ระบบ</button></Link>
+          <Link href="/product/1" ><button className={loginstyle.roundbutton} style={{margin:"10px 0"}}>เข้าสู่ระบบ</button></Link>
           <Link href="/register"><button className={loginstyle.roundbutton} style={{margin:"5px 0"}}>สมัครสมาชิก</button></Link>
           <Link href="/forgotpassword">
             <a className={loginstyle.font12} >ลืมรหัสผ่าน</a>
