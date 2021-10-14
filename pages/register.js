@@ -9,6 +9,7 @@ import { Store } from '../utils/Store';
 import { Controller, useForm } from 'react-hook-form';
 import Cookies from 'js-cookie';
 import React, { useContext, useEffect } from 'react';
+import axios from 'axios';
 export default function Register() {
   const { register, handleSubmit } = useForm();
   const router = useRouter();
@@ -22,11 +23,18 @@ export default function Register() {
     }
   }, []);
 
-  const onSubmit = (data) => {
-    if (data.password !== data.repassword) {
+  const onSubmit = async (dataa) => {
+    if (dataa.password !== dataa.repassword) {
       alert('password not correct');
     }
-    console.log(data);
+    console.log(dataa);
+    try {
+      const {data}   = await axios.post('/api/users/register', dataa);
+      dispatch({ type: 'USER_LOGIN', payload: data });
+      Cookies.set('userInfo', JSON.stringify(data));
+    } catch (err) {
+      alert(err);
+    }
   };
   return (
     <Layout>
