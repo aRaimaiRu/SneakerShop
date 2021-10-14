@@ -2,8 +2,8 @@
     display: grid;
     align-self: start;
     width: 100%;
-    grid-template-columns: repeat(2,48%);
-    grid-template-rows: repeat(2,80%);
+    grid-template-columns: repeat(2,46%);
+    grid-template-rows: repeat(2,100%);
     justify-items: center;
     align-items: center;
     row-gap: 50px;

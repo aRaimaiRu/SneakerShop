@@ -29,10 +29,11 @@ form > label {
 .embla {
   position: relative;
   background-color: #f7f7f7;
-  padding: 20px;
-  max-width: 670px;
+  width: 100%;
+  /* padding: 20px; */
+  /* max-width: 670px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
 }
 
 .embla__viewport {
