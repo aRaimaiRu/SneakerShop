@@ -4,7 +4,6 @@ import useEmblaCarousel from "embla-carousel-react";
 import { mediaByIndex } from "../media";
 // import "../css/embla.css";
 
-
 const EmblaCarousel = ({ slides }) => {
   const [viewportRef, embla] = useEmblaCarousel({ skipSnaps: false });
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
@@ -28,12 +27,12 @@ const EmblaCarousel = ({ slides }) => {
     <div className="embla">
       <div className="embla__viewport" ref={viewportRef}>
         <div className="embla__container">
-          {slides.map((index,id) => (
+          {slides.map((index, id) => (
             <div className="embla__slide" key={id}>
               <div className="embla__slide__inner">
                 <img
                   className="embla__slide__img"
-                  src={index}
+                  src={mediaByIndex(index)}
                   alt="A cool cat."
                 />
               </div>
